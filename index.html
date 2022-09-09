@@ -12,22 +12,74 @@
     
     <div class="caesar">
         <h1>Online converter to encrypt and decrypt any text</h1>
-            <div class="caesar__text">
-
+        
+        <h3>What is a Caesar cipher</h3>
+            <div class="caesar__description">
+                <p>
+                    <b>Caesar cipher</b> - this is a type of substitution 
+                    cipher in which each symbol in the plaintext is replaced 
+                    by a symbol located at a certain constant number of 
+                    positions to the left or right of it in the alphabet.
+                </p>
             </div>
-
+        
+            <div class="caesar__text">
+                <textarea name="caesarForm[text]" id="caesar__text-input" placeholder="Text" rows="5" aria-required="true" aria-invalid="false"></textarea>
+            </div>
+        
         <h3>Operation</h3>
             <div class="caesar__operation">
-
+                <select name="caesarForm[type]" id="caesar__operation-choice">
+                    <option value="1">Encrypt</option>
+                    <option value="2">Decrypt</option>
+                </select>
             </div>
 
         <h3>Shift</h3>
             <div class="caesar__shift">
-
+                <select name="caesarForm[shift]" id="caesar__shift-choice">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                    <option value="32">32</option>
+                    <option value="33">33</option>
+                </select>
             </div>
         
+        <button class="caesar__btn" id="result">Encrypt</button>
+
         <h3>Result</h3>
-            <div class="caesar__result"></div>
+            <div class="caesar__result">
+                <textarea name="resultForm[text]" id="caesar__result-output" rows="5" aria-required="true" aria-invalid="false"></textarea>
+            </div>
     </div>
     
 </body>
