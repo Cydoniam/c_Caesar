@@ -16,4 +16,56 @@ h3 {
     flex-direction: column;
     align-items: center;
     padding: 20px;
+
+    &__description,
+    &__text,
+    &__operation,
+    &__shift,
+    &__btn,
+    &__result {
+        margin-bottom: 10px;
+    }
+
+    &__description {
+        display: flex;
+        justify-content: center;
+        p {
+            text-align: center;
+            width: 55%;
+        }
+    }
+
+    &__text {
+        &-input {
+            height: 100px;
+            width: 370px;
+            resize: none;
+            outline: none;
+            border-radius: 3px;
+        }
+    }
 }
+
+#caesar__text-input {
+    height: 100px;
+    width: 520px;
+    resize: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+#caesar__result-output {
+    height: 100px;
+    width: 520px;
+    resize: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+// #caesar__operation-choice {
+//     width: 120px;
+// }
+
+// #caesar__shift-choice {
+//     width: 120px;
+// }

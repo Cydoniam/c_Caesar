@@ -16,4 +16,38 @@ h3 {
   flex-direction: column;
   align-items: center;
   padding: 20px;
+}
+.caesar__description, .caesar__text, .caesar__operation, .caesar__shift, .caesar__btn, .caesar__result {
+  margin-bottom: 10px;
+}
+.caesar__description {
+  display: flex;
+  justify-content: center;
+}
+.caesar__description p {
+  text-align: center;
+  width: 55%;
+}
+.caesar__text-input {
+  height: 100px;
+  width: 370px;
+  resize: none;
+  outline: none;
+  border-radius: 3px;
+}
+
+#caesar__text-input {
+  height: 100px;
+  width: 520px;
+  resize: none;
+  outline: none;
+  border-radius: 3px;
+}
+
+#caesar__result-output {
+  height: 100px;
+  width: 520px;
+  resize: none;
+  outline: none;
+  border-radius: 3px;
 }/*# sourceMappingURL=styles.css.map */
