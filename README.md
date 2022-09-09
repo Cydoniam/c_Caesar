@@ -1,2 +1,2 @@
 # c_Caesar
-Caesar script
+Caesar cipher
