@@ -1,0 +1,19 @@
+h1,
+h3 {
+    font-style: italic;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+}
+
+.caesar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
