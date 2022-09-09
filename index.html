@@ -29,9 +29,9 @@
         
         <h3>Operation</h3>
             <div class="caesar__operation">
-                <select name="caesarForm[type]" id="caesar__operation-choice">
-                    <option value="1">Encrypt</option>
-                    <option value="2">Decrypt</option>
+                <select name="caesarForm[type]" id="caesar__operation-choice" onclick="caesarButton()">
+                    <option value="1" id="encrypt">Encrypt</option>
+                    <option value="2" id="decrypt">Decrypt</option>
                 </select>
             </div>
 
@@ -74,13 +74,16 @@
                 </select>
             </div>
         
-        <button class="caesar__btn" id="result">Encrypt</button>
+        <button class="caesar__btn" id="result__btn">Encrypt</button>
 
         <h3>Result</h3>
             <div class="caesar__result">
-                <textarea name="resultForm[text]" id="caesar__result-output" rows="5" aria-required="true" aria-invalid="false"></textarea>
+                <alert class="caesar__result-output" id="result__text" role="alert"></alert>
             </div>
     </div>
     
 </body>
+
+<script src="/scripts/index.js"></script>
+
 </html>
