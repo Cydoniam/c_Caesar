@@ -13,16 +13,16 @@ const caesarButton = () => {
 }
 
 const caesarCipher = (text, operation, shift) => {
-    // let out = ""
-    text = document.getElementById('caesar__text-input').value
+    let out = ""
+    text = document.getElementById('caesar__text-input').value.split('')
     operation = document.getElementById('caesar__operation-choice').value
     shift = document.getElementById('caesar__shift-choice').value
 
-    // for (let i = 0; text.split('') === symbols.at(i); i++) {
-    //     out += symbols.forEach
+    // for(let i of text) {
+    //     out += String.fromCharCode(i.charCodeAt(0) + 1)
     // }
 
-    // return symbols.at()
+    return out
     // text.split('')
 }
 
