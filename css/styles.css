@@ -1,6 +1,9 @@
+html {
+  font-family: "Kelly Slab", cursive;
+}
+
 h1,
 h3 {
-  font-style: italic;
   margin: 0;
   margin-bottom: 5px;
 }
@@ -8,7 +11,7 @@ h3 {
 .main {
   width: 100%;
   height: 100%;
-  background-color: antiquewhite;
+  background-color: bisque;
 }
 
 .caesar {
@@ -37,9 +40,36 @@ h3 {
 }
 
 #caesar__text-input {
+  border-color: black;
   height: 100px;
   width: 520px;
   resize: none;
   outline: none;
   border-radius: 3px;
+}
+
+.caesar__result-output {
+  background-color: blanchedalmond;
+  border-color: black;
+  height: 100px;
+  width: 520px;
+  resize: none;
+  outline: none;
+  border-radius: 3px;
+}
+
+.caesar__btn {
+  background-color: blanchedalmond;
+  border-radius: 3px;
+  border-width: 1px;
+  padding: 3px 12px;
+  margin-bottom: 20px;
+}
+
+#caesar__operation-choice {
+  width: 120px;
+}
+
+#caesar__shift-choice {
+  width: 120px;
 }/*# sourceMappingURL=styles.css.map */
