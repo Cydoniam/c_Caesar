@@ -27,19 +27,19 @@ const caesarCipher = (text, operation, shift) => {
             for (let j = 0; j < symbols.length; j++) {
                 if (text[i] === arrayHighEn[j]) {
                     console.log(text[i] === arrayHighEn[j])//test
-                    out += text[i]
+                    out += arrayHighEn[j + Number(shift)]
                 } else if (text[i] === arrayHighRu[j]) {
                     console.log(text[i] === arrayHighRu[j])//test
-                    out += text[i]
+                    out += arrayHighRu[j + Number(shift)]
                 } else if (text[i] === arrayLowEn[j]) {
                     console.log(text[i] === arrayLowEn[j])//test
-                    out += text[i]
+                    out += arrayLowEn[j + Number(shift)]
                 } else if (text[i] === arrayLowRu[j]) {
                     console.log(text[i] === arrayLowRu[j])//test
-                    out += text[i]
+                    out += arrayLowRu[j + Number(shift)]
                 } else if (text[i] === symbols[j]) {
                     console.log(text[i] === symbols[j])//test
-                    out += text[i]
+                    out += symbols[j]
                 } else {}
             }
         }
@@ -52,19 +52,19 @@ const caesarCipher = (text, operation, shift) => {
             for (let j = 0; j < arrayHighEn.length; j++) {
                 if (text[i] === arrayHighEn[j]) {
                     console.log(text[i] === arrayHighEn[j])//test
-                    out += text[i]
+                    out += arrayHighEn[j + Number(shift)]
                 } else if (text[i] === arrayHighRu[j]) {
                     console.log(text[i] === arrayHighRu[j])//test
-                    out += text[i]
+                    out += arrayHighRu[j + Number(shift)]
                 } else if (text[i] === arrayLowEn[j]) {
                     console.log(text[i] === arrayLowEn[j])//test
-                    out += text[i]
+                    out += arrayLowEn[j + Number(shift)]
                 } else if (text[i] === arrayLowRu[j]) {
                     console.log(text[i] === arrayLowRu[j])//test
-                    out += text[i]
+                    out += arrayLowRu[j + Number(shift)]
                 } else if (text[i] === symbols[j]) {
                     console.log(text[i] === symbols[j])//test
-                    out += text[i]
+                    out += symbols[j]
                 } else {}
             }
         }
@@ -72,5 +72,5 @@ const caesarCipher = (text, operation, shift) => {
 
     console.log(out)//test
 
-    return out, document.getElementById("result__text").innerHTML = out //what if
+    return document.getElementById("result__text").innerHTML = out //what if out, 
 }
