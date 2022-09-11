@@ -20,46 +20,57 @@ const caesarCipher = (text, operation, shift) => {
     operation = document.getElementById('caesar__operation-choice').value
     shift = document.getElementById('caesar__shift-choice').value
 
-    // if (operation === 1) {
-        
+    if (operation === "1") {
+
         for (let i = 0; i < text.length; i++) {
-            console.log(text[i])
+            console.log(text[i])//test
             for (let j = 0; j < arrayHighEn.length; j++) {
                 if (text[i] === arrayHighEn[j]) {
-                    console.log(text[i] === arrayHighEn[j])
+                    console.log(text[i] === arrayHighEn[j])//test
                     out += text[i]
                 } else if (text[i] === arrayHighRu[j]) {
-                    console.log(text[i] === arrayHighRu[j])
+                    console.log(text[i] === arrayHighRu[j])//test
                     out += text[i]
                 } else if (text[i] === arrayLowEn[j]) {
-                    console.log(text[i] === arrayLowEn[j])
+                    console.log(text[i] === arrayLowEn[j])//test
                     out += text[i]
                 } else if (text[i] === arrayLowRu[j]) {
-                    console.log(text[i] === arrayLowRu[j])
+                    console.log(text[i] === arrayLowRu[j])//test
                     out += text[i]
                 } else if (text[i] === symbols[j]) {
-                    console.log(text[i] === symbols[j])
+                    console.log(text[i] === symbols[j])//test
                     out += text[i]
                 } else {}
             }
-            
-            // out += text.charCodeAt(i)
-            // out += arrayHighEn[i].charCodeAt()
-            // for(let j = 0; j < arrayHighRu.length;) {
-            // }
-    
-
-            // str = (arrayHighEn[i - shift] === undefined) ? (arrayHighEn[i - shift - arrayHighEn.length]) : (arrayHighEn[i - shift])
-            // out = out.concat(str) 
-
         }
 
-    // }
-    // if (operation === 2) {
+    }
+    if (operation === "2") {
         
-    // }
+        for (let i = 0; i < text.length; i++) {
+            console.log(text[i])//test
+            for (let j = 0; j < arrayHighEn.length; j++) {
+                if (text[i] === arrayHighEn[j]) {
+                    console.log(text[i] === arrayHighEn[j])//test
+                    out += text[i]
+                } else if (text[i] === arrayHighRu[j]) {
+                    console.log(text[i] === arrayHighRu[j])//test
+                    out += text[i]
+                } else if (text[i] === arrayLowEn[j]) {
+                    console.log(text[i] === arrayLowEn[j])//test
+                    out += text[i]
+                } else if (text[i] === arrayLowRu[j]) {
+                    console.log(text[i] === arrayLowRu[j])//test
+                    out += text[i]
+                } else if (text[i] === symbols[j]) {
+                    console.log(text[i] === symbols[j])//test
+                    out += text[i]
+                } else {}
+            }
+        }
+    }
 
-    console.log(out)
+    console.log(out)//test
 
     return out
 }
