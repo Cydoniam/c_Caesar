@@ -23,22 +23,16 @@ const caesarCipher = (text, operation, shift) => {
     if (operation === "1") {
 
         for (let i = 0; i < text.length; i++) {
-            console.log(text[i])//test
             for (let j = 0; j < symbols.length; j++) {
                 if (text[i] === arrayHighEn[j]) {
-                    console.log(text[i] === arrayHighEn[j])//test
-                    out += arrayHighEn[j + Number(shift)]
+                    out += arrayHighEn[j + Number(shift) % arrayHighEn.length]
                 } else if (text[i] === arrayHighRu[j]) {
-                    console.log(text[i] === arrayHighRu[j])//test
-                    out += arrayHighRu[j + Number(shift)]
+                    out += arrayHighRu[j + Number(shift) % arrayHighRu.length]
                 } else if (text[i] === arrayLowEn[j]) {
-                    console.log(text[i] === arrayLowEn[j])//test
-                    out += arrayLowEn[j + Number(shift)]
+                    out += arrayLowEn[j + Number(shift) % arrayLowEn.length]
                 } else if (text[i] === arrayLowRu[j]) {
-                    console.log(text[i] === arrayLowRu[j])//test
-                    out += arrayLowRu[j + Number(shift)]
+                    out += arrayLowRu[j + Number(shift) % arrayLowRu.length]
                 } else if (text[i] === symbols[j]) {
-                    console.log(text[i] === symbols[j])//test
                     out += symbols[j]
                 } else {}
             }
@@ -48,22 +42,16 @@ const caesarCipher = (text, operation, shift) => {
     if (operation === "2") {
         
         for (let i = 0; i < text.length; i++) {
-            console.log(text[i])//test
             for (let j = 0; j < arrayHighEn.length; j++) {
                 if (text[i] === arrayHighEn[j]) {
-                    console.log(text[i] === arrayHighEn[j])//test
-                    out += arrayHighEn[j + Number(shift)]
+                    out += arrayHighEn[j - Number(shift) % arrayHighEn.length]
                 } else if (text[i] === arrayHighRu[j]) {
-                    console.log(text[i] === arrayHighRu[j])//test
-                    out += arrayHighRu[j + Number(shift)]
+                    out += arrayHighRu[j - Number(shift) % arrayHighEn.length]
                 } else if (text[i] === arrayLowEn[j]) {
-                    console.log(text[i] === arrayLowEn[j])//test
-                    out += arrayLowEn[j + Number(shift)]
+                    out += arrayLowEn[j - Number(shift) % arrayLowEn.length]
                 } else if (text[i] === arrayLowRu[j]) {
-                    console.log(text[i] === arrayLowRu[j])//test
-                    out += arrayLowRu[j + Number(shift)]
+                    out += arrayLowRu[j - Number(shift) % arrayLowEn.length]
                 } else if (text[i] === symbols[j]) {
-                    console.log(text[i] === symbols[j])//test
                     out += symbols[j]
                 } else {}
             }
