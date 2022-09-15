@@ -1,7 +1,5 @@
 # Caesar cipher
-```bash
 https://cydoniam.github.io/cyd-Caesar/
-```
 ## Usage
 - Enter text
 - Select the operation(Encrypt or Decrypt)
